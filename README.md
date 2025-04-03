@@ -8,6 +8,21 @@ A comprehensive testing environment for MCP (Model Context Protocol) servers, wi
 
 The MCP Testing Environment provides tools for simulating MCP clients, managing Docker containers, aggregating logs from multiple sources, and testing web UIs. It's designed to streamline the development and testing of MCP servers by providing a unified interface for all testing components.
 
+## Testing Philosophy
+
+**IMPORTANT: Human-First, Functional Testing Approach**
+
+This testing environment is designed to prioritize a human-first, functional testing approach:
+
+1. **Start with User Interaction**: Begin testing by simulating how a human would use the MCP server - through natural language prompts and queries
+2. **Observe Functional Behavior**: Evaluate the server's responses and behavior from a user's perspective
+3. **Identify User-Facing Issues**: Focus first on issues that impact the user experience
+4. **Only Then Dive into Code**: After identifying functional issues, use logs and code inspection to diagnose root causes
+5. **Implement Fixes**: Make targeted changes to address the identified issues
+6. **Verify with Functional Testing**: Confirm fixes by testing again from the user's perspective
+
+Example: When testing a Discord MCP server, start by asking natural questions like "Has anything been said about Manus and Discord recently?" rather than immediately inspecting code or configuration files.
+
 ## Features
 
 - **MCP Client Simulator**: Test MCP servers without requiring an actual MCP client like Claude Code
