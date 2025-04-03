@@ -128,6 +128,10 @@ python mcp_testing_environment.py --port 8000
 
 ## Documentation
 
+**IMPORTANT: Read these documents before testing any MCP server:**
+
+- **`testing_protocol.md`**: **REQUIRED READING** - Detailed protocol for human-first testing approach
+- **`example_testing_scenarios.md`**: **REQUIRED READING** - Concrete examples of human-like testing queries
 - `documentation.md`: Comprehensive documentation for the MCP Testing Environment
 - `usage_instructions.md`: Instructions for using the environment in future conversations
 
